@@ -1,0 +1,12 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI_Self_Referencing
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:    
+    - uses: actions/checkout@v2
+    - uses: ansh121-test-org-2/public-action-1@main
